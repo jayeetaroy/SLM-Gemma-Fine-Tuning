@@ -1,0 +1,13 @@
+{
+  "base_model": "google/gemma-3-1b-it",
+  "dataset": "Salesforce/xlam-function-calling-60k",
+  "seed": 42,
+  "train_size": 1000,
+  "validation_size": 100,
+  "test_size": 200,
+  "max_length": 1024,
+  "quantization": "4bit-nf4-double-quant",
+  "compute_dtype": "auto",
+  "lora": {"r": 16, "alpha": 32, "dropout": 0.05, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj"]},
+  "training": {"per_device_train_batch_size": 1, "gradient_accumulation_steps": 8, "num_train_epochs": 1, "learning_rate": 0.0001, "gradient_checkpointing": true, "logging_steps": 5, "save_strategy": "epoch"}
+}

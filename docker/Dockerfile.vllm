@@ -1,0 +1,4 @@
+FROM vllm/vllm-openai:v0.8.5
+COPY scripts/serve_vllm.sh /usr/local/bin/serve_vllm.sh
+RUN chmod +x /usr/local/bin/serve_vllm.sh
+ENTRYPOINT ["/usr/local/bin/serve_vllm.sh"]

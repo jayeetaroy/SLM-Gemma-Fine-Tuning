@@ -1,0 +1,4 @@
+datasets==3.3.2
+transformers==4.49.0
+openai==1.68.2
+matplotlib==3.10.1

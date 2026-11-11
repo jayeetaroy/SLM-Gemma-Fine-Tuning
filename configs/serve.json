@@ -1,0 +1,1 @@
+{"base_alias":"base","adapter_alias":"tool-specialist","max_model_len":2048,"max_lora_rank":16,"dtype":"auto","gpu_memory_utilization":0.85,"enable_prefix_caching":false}
